@@ -1,6 +1,6 @@
 # E-commerceApp
 
-E-commerceApp is a Spring Boot web application designed to manage users, shopping carts, and products.
+E-commerceApp is a Spring Boot web application designed to manage users, shopping carts, products, and authentication using refresh tokens.
 
 ## Database Configuration
 
@@ -24,9 +24,9 @@ spring.datasource.password=your_db_password
 
 3. Save the `application.properties` file after making these changes.
 
-## Security
+## Security and Authentication
 
-The application utilizes Spring Security for authentication and authorization management. Security configurations are defined in the `SecurityConfig` class.
+The application uses Spring Security for authentication and authorization management. It also includes refresh token support for secure authentication.
 
 ## Main Features
 
@@ -36,6 +36,15 @@ The application provides the following main features:
 - Assignment of roles to users, such as regular user or administrator.
 - Shopping cart management, including creating new shopping carts and adding products to carts.
 - Product management, including adding, editing, and deleting products.
+- Refresh token support for secure authentication.
+
+## CRUD Operations
+
+- **User Management**: You can perform CRUD operations on users, including creating, reading, updating, and deleting user accounts.
+
+- **Shopping Cart Management**: You can create and manage shopping carts, add products to carts, and update cart contents.
+
+- **Product Management**: CRUD operations for products, including adding new products, updating existing ones, and deleting products.
 
 ## Running the Application
 
